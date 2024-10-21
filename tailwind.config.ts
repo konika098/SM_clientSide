@@ -12,8 +12,12 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        luxurious: ["'Luxurious Script'", "cursive"], 
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
