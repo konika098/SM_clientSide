@@ -9,11 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      primary_clr:"#5F7A69",
+      secondary_clr:"#040D08",
+      third_clr:"#7B7B7B",
+      fth_clr:"#465B4E",
+      fifth_clr:"#F5F8F5"
+      
       },
       fontFamily: {
-        luxurious: ["'Luxurious Script'", "cursive"], 
+        luxurious: ["Luxurious Script", "serif"], 
       },
     },
   },

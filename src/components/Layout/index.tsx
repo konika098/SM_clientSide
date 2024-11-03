@@ -1,5 +1,5 @@
-import Footer from "../SharedComponent/Footer";
-import Navbar from "../SharedComponent/Navbar";
+import Footer from "../Shared/Footer";
+import Navbar from "../Shared/Navbar";
 
 export default function RootLayout({
   children,
