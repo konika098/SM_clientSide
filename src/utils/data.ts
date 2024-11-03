@@ -1,4 +1,4 @@
-import { IBenefit, IBestseller, ICategory, IInsta, INavItem, IShipping } from "./type";
+import { IBenefit, IBestseller, ICategory, IInsta, INavItem, IProducts, IShipping } from "./type";
 import category1 from "/public/assets/images.png";
 import photo from "/public/assets/photo.png";
 import leaf from "../../public/assets/leaf 1.png";
@@ -19,7 +19,7 @@ export const navItems: INavItem[] = [
     {
       id: 2,
       name: "Shop",
-      path: "/Shop",
+      path: "/shop",
     },
     {
       id: 3,
@@ -161,3 +161,22 @@ export const bestseller: IBestseller[] = [
       img:photo
     }
   ]
+  export const products: IProducts[] = [
+    {
+      id:1,
+      img:photo,
+      name: "Liquid Foundation",
+      price: 120,
+      oldPrice: 150,
+    },
+    {
+      id:2,
+      img:photo,
+      name: "Giorgio Armani Foundation",
+      price: 250,
+      oldPrice: 300,
+    },
+    // Add more products as needed
+  ];
+  
+  
