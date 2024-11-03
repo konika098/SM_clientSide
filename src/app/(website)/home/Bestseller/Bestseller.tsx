@@ -10,30 +10,30 @@ const Bestseller = () => {
   return (
     <div className="bestseller mb-20">
       <div className="container">
-        <div>
-          <Title
-            title=" Bestseller Products"
-            subtitle="It is a long established fact that a reader will be distracted by
-            the readable content."
-          />
-        </div>
-        <div className="grid grid-cols-2 gap-8">
-          <div className="h-[780px] min-w-[392px] relative">
-            <Image src={photo} alt="best product" className="w-full h-full" />
-            <div className="absolute bottom-10 left-10">
-              <h1 className="text-white text-4xl mb-8">Empower Yourself</h1>
+        <Title
+          title="Bestseller Products"
+          subtitle="It is a long established fact that a reader will be distracted by the readable content."
+        />
+        <div className="grid grid-cols-[auto,1fr] gap-8">
+          {/* Main Product Section */}
+          <div className="relative h-[780px] max-w-[392px] rounded-lg shadow-lg overflow-hidden">
+            <Image src={photo} alt="Best product" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 p-4 text-center">
+              <h1 className="text-white text-4xl font-bold mb-4">Empower Yourself</h1>
               <Button name="Explore More" />
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-8">
-            {bestseller.map((items, index) => (
+
+          {/* Product List */}
+          <div className="grid grid-cols-3 gap-4">
+            {bestseller.map((item, index) => (
               <SellerCard
                 key={index}
-                img={items.img}
-                altname={items.name}
-                name={items.name}
-                price={items.price}
-                d_price={items.discount_price}
+                img={item.img}
+                altname={item.name}
+                name={item.name}
+                price={item.price}
+                d_price={item.discount_price}
               />
             ))}
           </div>

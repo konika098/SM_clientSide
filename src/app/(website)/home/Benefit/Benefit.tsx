@@ -12,10 +12,10 @@ const Benefit = () => {
             <Title title="Benefit Using Our Product" subtitle="It is a long established fact that a reader will be distracted by
             the readable content."/>
         </div>
-        <div className="flex gap-14 items-center">
+        <div className="flex justify-between items-center">
           <BenefitSection />
-          <div className="max-w-[511px]">
-            <Image src={photo} alt="photo" />
+          <div className="max-w-[511px] h-full">
+            <Image src={photo} alt="photo" className="h-[550px]"/>
           </div>
         </div>
       </div>
